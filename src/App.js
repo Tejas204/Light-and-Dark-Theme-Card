@@ -4,7 +4,7 @@ import Card from './component/Card';
 
 function App() {
   return (
-    <div className='justify-center'>
+    <div className='justify-center parent-dark'>
       <Card></Card>
     </div>
   );
