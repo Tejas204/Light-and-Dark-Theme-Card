@@ -6,10 +6,10 @@ import { useState } from 'react';
 function App() {
 
   // Hook: Set light theme or dark theme
-  const[theme, setTheme] = useState('');
+  const[theme, setTheme] = useState('light');
 
   return (
-    <div className={`justify-center`}>
+    <div className={`justify-center transition ease-in-out duration-500 ${theme == 'light' ? 'parent-light' : 'parent-dark'}`}>
       <Card setTheme={setTheme} theme={theme}></Card>
     </div>
   );

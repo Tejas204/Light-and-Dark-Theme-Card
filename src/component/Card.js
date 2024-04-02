@@ -5,7 +5,12 @@ const Card = ({setTheme, theme}) => {
   return (
     // Card layout
     <div className='flex flex-col gap-y-4 h-screen justify-center items-center'>
-        <div className='flex flex-col gap-y-8 items-center p-5 md:p-10 w-3/4 lg:w-2/4 xl:w-1/4 border-2 rounded-xl shadow-md'>
+        <div className={`flex flex-col gap-y-8 items-center p-5 md:p-10 w-3/4 
+                         lg:w-2/4 xl:w-1/4 border-2 rounded-xl shadow-md
+                         transition
+                         ease-in-out
+                         duration-700
+                         ${theme == 'light' ? 'card-light' : 'card-dark'}`}>
             <p className='text-md md:text-xl lg:text-2xl font-bold'>
                 Card
             </p>

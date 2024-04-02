@@ -18,7 +18,7 @@ const LightDarkButton = ({setTheme, theme}) => {
 
   return (
     <div className='flex justify-center items-center space-x-4'>
-        <button className='p-3 border-2 border-[#000000] rounded-lg font-medium' onClick={handleLightTheme}>Light Mode</button>
+        <button className='p-3 border-2 border-[#000000] rounded-lg font-medium bg-[#E4E6EB]' onClick={handleLightTheme}>Light Mode</button>
         <button className='p-3 border-2 border-[#a955f7] rounded-lg font-medium bg-[#a955f7] text-[#FFFFFF]' onClick={handleDarkTheme}>Dark Mode</button>
     </div>
   )
