@@ -1,9 +1,11 @@
 import React from 'react'
+import LightDarkButton from './LightDarkButton'
 
-const Card = () => {
+const Card = ({setTheme, theme}) => {
   return (
-    <div className='flex h-screen justify-center items-center'>
-        <div className='flex flex-col gap-y-8 items-center p-5 md:p-10 w-3/4 lg:w-2/4 xl:w-1/4 border-2 rounded-xl card-dark shadow-md'>
+    // Card layout
+    <div className='flex flex-col gap-y-4 h-screen justify-center items-center'>
+        <div className='flex flex-col gap-y-8 items-center p-5 md:p-10 w-3/4 lg:w-2/4 xl:w-1/4 border-2 rounded-xl shadow-md'>
             <p className='text-md md:text-xl lg:text-2xl font-bold'>
                 Card
             </p>
@@ -16,6 +18,10 @@ const Card = () => {
                 Submit
             </button>
         </div>
+
+    {/* Button Layout */}
+    <LightDarkButton setTheme={setTheme} theme={theme}></LightDarkButton>
+
     </div>
   )
 }
